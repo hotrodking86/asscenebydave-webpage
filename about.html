@@ -88,24 +88,26 @@
     }
 
     .photo-wrap {
-      width: 100%;
-      max-width: 280px;
-      margin: 0 auto;
-      padding: 8px;
-      background: #a87f3f;
-      border-radius: 22px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
-    }
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background: #a87f3f;
+  border: 8px solid #a87f3f;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
 
-    .profile-photo {
-      display: block;
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      object-position: center;
-      background: #eee9df;
-      border-radius: 16px;
-    }
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+}
 
     .intro-copy {
       text-align: left;
@@ -291,8 +293,6 @@
           class="profile-photo"
           src="dave-photo.webp"
           alt="Dave, creator of As Scene by Dave"
-          width="800"
-          height="1000"
           loading="eager"
           fetchpriority="high"
         />
